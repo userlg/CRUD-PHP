@@ -19,9 +19,12 @@
 
     #echo ($sql);
     #echo ($id);
+
     $resultado = $conn->query($sql);
 
     $filas = $resultado->fetch_assoc();
+
+    #Ciclo que recorre completamente las filas 
 
     if ($filas) {
         $name = ($filas['NOMBRE']);
